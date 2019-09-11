@@ -1,0 +1,25 @@
+.svn/*
+*.iml
+*.class
+WebContent/invoiceManage/*.txt
+WebContent/templates/bank/fas/*.txt
+WebContent/upload/*
+WebContent/attachment/*
+!.gitkeep
+WebContent/reportout/*
+WebContent/WEB-INF/classes/*
+WebContent/dist/
+node_modules/*
+.idea/*
+.settings/*
+npm-debug.log
+*_build.html
+
+WebContent/pdfdoc/
+
+# gradle files
+
+/.gradle
+/build
+
+*_build.html
