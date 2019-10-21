@@ -1,0 +1,55 @@
+<html>
+    <td class="tdTitle">空置面积：</td>
+    <td id="emptyArea_tb" width="35%" class="data">
+      <span style="width:160px;float:left;"  id="emptyArea_text"></span>
+      <span style="width:160px;float:left;display: none;" id="emptyArea_input"
+            class="pageRow_input">
+                              <input id="emptyArea" style="width: 155px;" class="easyui-numberbox text" precision="2" min="0"
+                       max="99999999" type="text"  name="house.emptyArea"></input>
+                          </span>
+      <span class="button-span">
+                              <a onclick="showInput('emptyArea',this,'numberbox')">编辑</a>
+                          </span>
+    </td>
+    <td class="tdTitle">物业接收时间： </td>
+  <td  width="35%" class="data">
+    <span style="width:160px;float:left;" id="wyReceiveDate_text"></span>
+    <span style="width:160px;float:left;display: none;" id="wyReceiveDate_input" class="pageRow_input" ><!--  -->
+							<input style="width:155px;" id="wyReceiveDate" class="easyui-datebox" name="house.wyReceiveDate" />
+						</span>
+    <span class="button-span">
+      <a onclick="showInput('wyReceiveDate',this)">编辑</a>
+		</span>
+  </td>
+  <td class="tdTitle">终止代管时间：</td>
+  <td  width="35%" class="data">
+    <span style="width:160px;float:left;" id="endProxyDate_text"></span>
+    <span style="width:160px;float:left;display: none;" id="endProxyDate_input" class="pageRow_input" ><!--  -->
+							<input style="width:155px;" id="endProxyDate" class="easyui-datebox" precision="2" name="house.endProxyDate" />
+						</span>
+    <span class="button-span">
+							<a onclick="showInput('endProxyDate',this)">编辑</a>
+					  </span>
+  </td>
+</html>
+<script>
+    function aa(){
+            /**空置面积*/
+            $('#emptyArea_text').html(rs.emptyArea);
+            $('#emptyArea').numberbox('setValue', rs.emptyArea);
+
+             /**二层面积*/
+             $('#secondArea_text').html(rs.secondArea);
+              $('#secondArea').numberbox('setValue', rs.secondArea);
+
+
+              /***物业接收时间*!/*/
+              $('#wyReceiveDate_text').html(rs.wyReceiveDate);
+              $('#wyReceiveDate').datebox('setValue', rs.wyReceiveDate);
+
+             /*** 终止代管时间*/
+              $('#endProxyDate_text').html(rs.endProxyDate);
+              $('#endProxyDate').datebox('setValue', rs.endProxyDate);
+    }
+              
+</script>
